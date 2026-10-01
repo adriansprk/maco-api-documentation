@@ -29,12 +29,12 @@ properties:
                 Identifiziert die Marktlokation mittels einer eindeutigen ID
                 | Mapping auf dataMarketLocation.maloId                   
             energierichtung:
-              $ref: "#/components/schemas/Energierichtung"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Energierichtung"
               description: > 
                 Energieflussrichtung der Marktlokation
                 | Mapping auf dataMarketLocation.energyDirection          
             messtechnischeEinordnung:
-              $ref: "#/components/schemas/MesstechnischeEinordnung"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/MesstechnischeEinordnung"
               description: > 
                 Angabe der messtechnischen Einordung der Marktlokation
                 | Mapping auf dataMarketLocation.measurementTechnologyClassification     
@@ -44,7 +44,7 @@ properties:
                 type: object
                 properties:
                   typ:
-                    $ref: "#/components/schemas/MarktlokationsTyp"
+                    $ref: "../../../_schemas/openapi.yml#/components/schemas/MarktlokationsTyp"
                     description: "Eigenschaft der Marktlokation. RUHENDE_MARKTLOKATION=ruhende Marktlokation, KUNDENANLAGE=Marktlokation ist eine Kundenanlage, STANDARD_MARKTLOKATION=alle 'Standard' Marktlokationen."                 
                   gueltigAb:
                     type: string
@@ -55,7 +55,7 @@ properties:
                     description: "Endezeitpunkt, Zeitpunkt bis zu dem die zugeordneten Marktpartner oder Lokationen zugeordnet werden. Dieser Zeitpunkt muss ein Tagesbeginn 00:00 Uhr gesetzlicher deutscher Zeit sein."
                     example: "2023-09-01T22:00:00Z"                                                                    
             lokationsadresse:
-              $ref: "#/components/schemas/Adresse"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Adresse"
               description: > 
                 Angabe des Ortes, Postleitzahl, Ländercode, Straße, Hausnummer, Hausnummernergänzung der Marktlokationsadresse
                 | Mapping auf dataMarketLocation.dataMarketLocationAddress                    
@@ -78,7 +78,7 @@ properties:
                     enum: 
                       - "1"                          
                   marktrolle:
-                    $ref: "#/components/schemas/Marktrolle"                                          
+                    $ref: "../../../_schemas/openapi.yml#/components/schemas/Marktrolle"
                   rollencodenummer:
                     type: string
                     description: "Identifiziert den Marktpartner (Marktpartner-ID)."
@@ -101,12 +101,12 @@ properties:
                   - zuordnungVon        
                   - zuordnungBis                       
             katasterinformation:
-              $ref: "#/components/schemas/Katasteradresse"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Katasteradresse"
               description: > 
                 Angabe des Gemarkungsnamens, Flurnummer, Flurstücksnummer (des Flurstücks) der Marktlokationsadresse
                 | Mapping auf dataMarketLocation.dataMarketLocationLandParcels                    
             geokoordinaten:
-              $ref: "#/components/schemas/Geokoordinaten"                
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Geokoordinaten"
               description: > 
                 Angabe der Breite (Breitengrad), Angabe der Breite (Breitengrad), UTM Ostwert, UTM Nordwert, Gauß-Krüger Hochwert, Gauß-Krüger Rechtswert 
                 | Mapping auf dataMarketLocation.dataMarketLocationGeographicCoordinates                                        
@@ -131,7 +131,7 @@ properties:
               enum: 
                 - "1"
             wahlrechtPrognosegrundlage:
-              $ref: "#/components/schemas/WahlrechtPrognosegrundlage"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/WahlrechtPrognosegrundlage"
               description: > 
                 Wahlrecht zur Änderung der Prognosegrundlage
                 | Mapping auf optionalChangeForecastBasis   
@@ -162,10 +162,10 @@ properties:
                 | Mapping auf identificationParameterId.tranchenIds    
             bildungTranchengroesse:
               description: "Gibt die Bildungslogik der Tranche an."
-              $ref: "#/components/schemas/BildungTranchengroesse"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/BildungTranchengroesse"
             aufteilungsmenge:
               description: "Gibt die Bildungslogik der Tranche an."
-              $ref: "#/components/schemas/Menge"           
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Menge"
             marktrollen:
               type: array
               description: > 

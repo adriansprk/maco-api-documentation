@@ -29,22 +29,22 @@ properties:
                 Identifiziert die Marktlokation mittels einer eindeutigen ID
                 | Mapping auf identificationParameterId.maloId                   
             energierichtung:
-              $ref: "#/components/schemas/Energierichtung"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Energierichtung"
               description: > 
                 Energieflussrichtung der Marktlokation
                 | Mapping auf energyDirection                    
             lokationsadresse:
-              $ref: "#/components/schemas/Adresse"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Adresse"
               description: > 
                 Angabe des Ortes, Postleitzahl, Ländercode, Straße, Hausnummer, Hausnummernergänzung der Marktlokationsadresse
                 | Mapping auf identificationParameterAddress                    
             katasterinformation:
-              $ref: "#/components/schemas/Katasteradresse"
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Katasteradresse"
               description: > 
                 Angabe des Gemarkungsnamens, Flurnummer, Flurstücksnummer (des Flurstücks) der Marktlokationsadresse
                 | Mapping auf identificationParameterAddress.landParcels                    
             geokoordinaten:
-              $ref: "#/components/schemas/Geokoordinaten"                
+              $ref: "../../../_schemas/openapi.yml#/components/schemas/Geokoordinaten"
               description: > 
                 Angabe der Breite (Breitengrad), Angabe der Breite (Breitengrad), UTM Ostwert, UTM Nordwert, Gauß-Krüger Hochwert, Gauß-Krüger Rechtswert 
                 | Mapping auf identificationParameterAddress.geographicCoordinates                    

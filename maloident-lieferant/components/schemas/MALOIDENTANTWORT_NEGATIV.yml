@@ -101,7 +101,7 @@ properties:
                 description: "Identifiziert den Marktpartner (Marktpartner-ID)."
                 example: "9980000000029"            
               rollencodetyp:
-                $ref: "#/components/schemas/Rollencodetyp"                
+                $ref: "../../../_schemas/openapi.yml#/components/schemas/Rollencodetyp"
             required:
               - boTyp
               - versionStruktur 

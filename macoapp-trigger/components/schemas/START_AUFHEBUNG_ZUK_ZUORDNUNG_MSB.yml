@@ -9,22 +9,22 @@ properties:
       MARKTLOKATION:
         type: array
         items:
-          $ref: "#/components/schemas/Marktlokation"                                
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Marktlokation"
       ENERGIELIEFERVERTRAG:
         type: array
         items:
           type: object
-          $ref: "#/components/schemas/Vertrag"                                                           
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Vertrag"
       NETZNUTZUNGSVERTRAG:
         type: array
         items:
           type: object
-          $ref: "#/components/schemas/Vertrag"                                                           
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Vertrag"
     required:
       - MARKTLOKATION
   transaktionsdaten:
     type: object
-    $ref: "#/components/schemas/Transaktionsdaten"                                                                   
+    $ref: "../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten"
     required:
       - ausfuehrungsdatum
       - vorgangsnummer 

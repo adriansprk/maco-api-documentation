@@ -3,11 +3,11 @@ properties:
     properties:
       TRANCHE:
         items:
-          $ref: #/components/schemas/Tranche
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Tranche"
         type: array
     type: object
   transaktionsdaten:
-    $ref: #/components/schemas/Transaktionsdaten
+    $ref: "../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten"
     type: object
     unevaluatedProperties: true
 type: object

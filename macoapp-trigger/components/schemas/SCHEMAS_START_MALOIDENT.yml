@@ -3,27 +3,27 @@ properties:
     properties:
       ENERGIELIEFERVERTRAG:
         items:
-          $ref: #/components/schemas/Vertrag
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Vertrag"
         type: array
       MARKTLOKATION:
         items:
-          $ref: #/components/schemas/Marktlokation
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Marktlokation"
         type: array
       MESSLOKATION:
         items:
-          $ref: #/components/schemas/Messlokation
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Messlokation"
         type: array
       TRANCHE:
         items:
-          $ref: #/components/schemas/Tranche
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Tranche"
         type: array
       ZAEHLER:
         items:
-          $ref: #/components/schemas/Zaehler
+          $ref: "../../../_schemas/openapi.yml#/components/schemas/Zaehler"
         type: array
     type: object
   transaktionsdaten:
-    $ref: #/components/schemas/Transaktionsdaten
+    $ref: "../../../_schemas/openapi.yml#/components/schemas/Transaktionsdaten"
     type: object
     unevaluatedProperties: true
 type: object
